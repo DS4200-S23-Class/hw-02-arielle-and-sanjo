@@ -1,33 +1,135 @@
-/* Homework 2 */
-body {
+  /* Homework 2 */
+  body {
     font-family: Arial;
 }
 
-/* lets say we want both paragraphs to be centered */
-/* assign a class to a div, then do: */
-/* do dot class, then how you want the text aligned */
+
+/*center table */
 .centered{
         margin-left: auto;
         margin-right: auto;
+        width: 100;
       
 }
 
+/*make the font blue*/
 .blue{
     color: blue
 }
 
+/*align the text in the center*/
 .center{
     text-align: center;
 }
 
+/*make the background color of the table header light blue*/
 tr:nth-child(1)
 {
   background-color: lightblue;
 }
+
+/*align the text to the left*/
 .left{
     text-align: left;
 }
 
+/*make the font size of the acknowledgments smaller*/
 #smaller{
     font-size: 20px;
 }
+
+/*table fits with size of page*/
+table {
+  width: 100%;
+
+}
+
+/*center table's data*/
+td {
+  text-align: center;
+}
+
+/*center table's headers*/
+tr {
+  text-align: center;
+}
+
+/* align the images so that they are centered in a column */
+.container { 
+    flex-direction: column;
+    column-width: 1em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* adjust the sizing of the images */
+  .rounded {
+    max-width: 30rem;
+    border-radius: .75rem;
+    
+  }
+
+#small{
+    font-size: 11px;
+}
+
+
+/* images stay the same even when you expand and condense the webpage */
+#img1 {
+    width: 20%;
+    height: inherit;
+    object-fit: cover;
+    object-positon: center center;
+  }
+  #img2 {
+    width: 78.5%;
+    height: inherit;
+    object-fit: cover;
+    object-positon: center center;
+  }
+
+
+/*give the rectangle a border*/
+rect {
+  stroke: black;
+  stroke-width: 4px;
+  fill: rgb(0, 0, 255);
+}
+
+/*make the rectangle change color when its hovered over*/
+  rect:hover {
+  fill: darkblue;
+}
+
+/*make the circle 50% opaque*/
+circle {
+  opacity: 50%;
+  fill: blue;
+}
+
+/*give the circle a border when its hovered over*/
+circle:hover {
+  stroke: black;
+  stroke-width: 4px;
+}
+
+/*flexbox container for svg shapes (circle and rectangle)*/
+#decoration {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+

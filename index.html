@@ -10,114 +10,211 @@
 
 <!-- structure webpage inside of body -->
 <body>
-     
-     <div id="data-abstraction">
-        <div class="info">
-            <h1 class="center"> Dataset Types</h1>
-            <table class="centered">
-                <tr>
-                  <th>Data</th>
-                  <th>Link</th>
-                  <th>Dataset Type</th>
-                </tr>
-                <tr>
-                  <td>UFO</td>
-                  <td><a href="https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download">link</a></td>
-                  <td>type</td>
-                </tr>
-                <tr>
-                    <td>Airports</td>
-                    <td><a href="https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.023945%2C-71.694162%2C8.00&showTable=true">link</a></td>
-                    <td>type</td>
-                  </tr>
-                  <tr>
-                    <td>Google-web</td>
-                    <td><a href="https://snap.stanford.edu/data/web-Google.html">link</a></td>
-                    <td>type</td>
-                  </tr>
-              </table>
-             </div>
-        <div class="info">
-            <h1 class="center"> Data Types </h1>
-            <h1 class="left">UFO </h1>
-            <ul>
-                <li>Row data type</li>
-                <li>Column data type</li>
-                <li>Column data type</li>
-                <li>...</li>
-              </ul>
-            <h1 class="left">Airports </h1>
-            <ul>
-                <li>Row data type</li>
-                <li>Column data type</li>
-                <li>Column data type</li>
-                <li>...</li>
-              </ul>
-            <h1 class="left">Google-web </h1>
-                    <li>Row data type</li>
-                    <li>Column data type</li>
-                    <li>Column data type</li>
-                    <li>...</li>
-                  </ul>
-            
-        </div>
-        <div>
 
-        <div class="task-abstraction">
-            <h1 class="center"> Task Abstraction</h1>
-            <div class="row">
-                <div class='column' class="center">
-                    <img src="img/vis1.png">
-                    <div class="row"> 
-                        <!-- identify the high, medium, and low level actions -->
-                    </div>
-                    </div>
-                  
-                
-                <div class='column' class="center">
-                    <img src="img/vis2.png">
-                </div>
-              </div>
-            </div>
-        <div id="decoration"> 
-            <div>
-                <table>
-                    <tr>
-                      <td><svg width="200" height="200">
-                        <circle cx="80" cy="80" r="50" stroke="black"
-                                stroke-width="2" fill="grey" />
-                      </svg></td>
-                      <td><svg width="400" height="100">
-                        <rect width="400" height="100"
-                              style="fill: rgb(0, 0, 255);
-                                     stroke-width: 10; stroke: rgb(0, 0, 0)" />
-                      </svg></td>
-                      <td><svg width="200" height="200">
-                        <circle cx="80" cy="80" r="50" stroke="black"
-                                stroke-width="2" fill="grey" />
-                      </svg></td>
-                      <td><svg width="400" height="100">
-                        <rect width="400" height="100"
-                              style="fill: rgb(0, 0, 255);
-                                     stroke-width: 10; stroke: rgb(0, 0, 0)" />
-                      </svg></td>
-                    </tr>
-                    
-                  </table>
-                
-                  
-            </div>
-        </div>
-        </div>
-        <h1 class="center" id="smaller"> Acknowledgements</h1>
-        <div class="left"> 
-            <li><a href="https://www.w3schools.com/tags/tag_tr.asp">w3schools table help</a></li>
-                    <li><a href="https://www.w3schools.com/html/html_links.asp">w3schools hyperlink help</a></li>
-                    <li><a href="http://www.corelangs.com/css/table/tablecolor.html">coloring css tables help</a></li>
-                    <li><a href="https://clearlydecoded.com/displaying-images-in-html">displaying images help</a></li>
-                    <li><a href="https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp">shapes help</a></li>
-                    
-        </div>
+   <div id="data-abstraction">
+    <div class="info">
+        <h1 class="center"> Dataset Types</h1>
+        <table class="centered">
+            <tr>
+              <th>Data</th>
+              <th>Link</th>
+              <th>Dataset Type</th>
+          </tr>
+          <tr>
+              <td>UFO</td>
+              <td><a href="data/UFO.csv">link</a></td>
+              <td>Table</td>
+          </tr>
+          <tr>
+            <td>Airports</td>
+            <td><a href="data/Airports.csv">link</a></td>
+            <td>Geometry</td>
+        </tr>
+        <tr>
+            <td>Google-web</td>
+            <td><a href="data/Google-Web.txt">link</a></td>
+            <td>Network</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Data Types  -->
+<div class="info">
+    <h1 class="center"> Data Types </h1>
+    <h1 class="left">UFO </h1>
+    <ul>
+      <li>row datatype: items</li>
+      <li>'datetime' column datatype: attributes</li>
+      <ul>
+          <li>attribute type: ordered (ordinal and cyclical)</li>
+      </ul>
+  </li>
+  <li>'city' column datatype: attributes</li>
+  <ul>
+      <li>attribute type: categorical</li>
+  </ul>
+</li>
+<li>'state' column datatype: attributes</li>
+    <ul>
+  <li>attribute type: categorical </li>
+</ul>
+</li>
+<li>'country' column datatype: attributes</li>
+<ul>
+  <li>attribute type: categorical</li>
+</ul>
+</li>
+<li>'shape' column datatype: attributes</li>
+<ul>
+  <li>attribute type: categorical</li>
+</ul>
+</li>
+<li>'duration (seconds)' column datatype: attributes</li>
+<ul>
+  <li>attribute type: ordered (quantitative and sequential)</li>
+</ul>
+
+</div>
+
+<h1 class="left">Airports </h1>
+<ul>
+    <li>row datatype: items</li>
+    <li>'AIRPORT_NAME' column datatype: attributes</li>
+    <ul>
+        <li>attribute type: categorical</li>
+    </ul>
+</li>
+<li>'LATITUDE' column datatype: position</li>
+<li>'LONGITUDE' column datatype: position</li>
+</ul>
+
+<h1 class="left">Google-web </h1>
+<ul>
+    <li>row datatype: link</li>
+    <li>'FromNodeId' column datatype: node (quantitative) </li>
+    <li>'ToNodeId' column datatype: node (quantitative) </li>
+
+</div>
+<div>
+    <!-- add a div with the id task abstraction -->
+    <div class="task-abstraction">
+        <!-- add a centered header task abstraction -->
+        <h1 class="center"> Task Abstraction</h1>
+        <div class="row">
+            <!-- create two columns with centered images -->
+            <div class="column" class="container">
+              <img src="img/vis1.png" id ="img2" class = "rounded"> 
+              <ul class="blue" id="small" class="left" >
+                <!-- identify the high, medium, and low level actions for each visualization -->
+
+                <li>High Level Task: Consume -> Present
+                    <ul>
+                      <li>Reasoning: The author is clearly trying to highlight a certain "answer" to the viewer, i.e., the daily maximum temperature in Vancouver in the last three days
+                      </li>
+                  </ul>
+              </li>
+              <li>Medium Level Task:  Look up
+                  <ul>
+                    <li>Reasoning: It's clear that the author of this visualization wants us to focus on the last three days.
+                        The author makes the location of the last 3 days quite clear and clearly labels it "last three days",
+                        allowing us to know the target.
+                    </li>
+                </ul>
+            </li>
+            <li>Low Level Task: Identify
+                <ul>
+                  <li>There is one distinct target of this visualization that the author wants us to focus on.
+                    By making the dots red and clearly labeling them, "Last 3 days", the author is emphasizing those data points to identify.
+
+                </li>
+            </ul>
+        </li>
+        <li>Target: All data -> Features
+            <ul>
+              <li> The visualization is highlighting a specific feature of the graph, i.e., the slight peak in the last 3 days.
+
+
+              </li>
+          </ul>
+      </li>
+  </ul>
+</div>
+<div class="column" class="container">
+
+  <img src="img/vis2.png" class="rounded" id="img2">
+  <ul class="blue" id="small" class="left">
+    <li>High Level Task: Consume -> Present
+        <ul>
+          <li>Reasoning: This visualization is clearly communicating something with the viewer. 
+            It goes deeper than just showing the audience the data. It has a clear
+        message it is trying to communicate with viewers.  </li>
+    </ul>
+</li>
+<li>Medium Level Task: Search -> Browse
+  <ul>
+    <li>We aren't looking at a specific year, so we don't have a particular target, but the locations of the years on the visualization
+        are very accessible. 
+    </li>
+</ul>
+</li>
+<li>Low Level Task: Query -> Summarize -> Compare
+    <ul>
+      <li>Reasoning: The author of this visualization is clearly comparing the results
+        Seattle and Portland.
+    </li>
+</ul>
+</li>
+<li>Target: All data -> Attributes -> Similarity
+    <ul>
+      <li>The visualization draws your attention to the comparison of the number of times the daily mean temperatures were 20 degrees Fahrenheit above normal 
+        in the two cities of interest, Seattle and Portland.
+
+
+    </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- add an div with the id decoration -->
+<div id="decoration"> 
+    <!-- add a row of evenly spaced SVG shapes -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"/>
+    </svg>     
+    <svg width="100" height="100">
+        <rect width="100" height="100"/>
+    </svg>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"/>
+    </svg>  
+
+    <svg width="100" height="100">
+        <rect width="100" height="100"/>
+    </svg>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"/>
+    </svg> 
+</div>
+</div>
+<!-- add a centered header to the bottom of the page -->
+<!-- with bulleted list of the resources used to complete this assignment  -->
+<h1 class="center" id="smaller"> Acknowledgements</h1>
+<div class="left">
+    <li><a href="https://www.w3schools.com/tags/tag_tr.asp">w3schools table help</a></li>
+    <li><a href="https://www.w3schools.com/html/html_links.asp">w3schools hyperlink help</a></li>
+    <li><a href="http://www.corelangs.com/css/table/tablecolor.html">coloring css tables help</a></li>
+    <li><a href="https://clearlydecoded.com/displaying-images-in-html">displaying images help</a></li>
+    <li><a href="https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp">shapes help</a></li>
+    <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">w3 schools columns help</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Column_layouts">more columns help</a></li>
+    <li><a href="https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/">more columns help</a></li>
+    <li><a href="https://stackoverflow.com/questions/56982637/how-to-keep-image-the-same-size-on-html-when-image-changes">sizing help</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox help</a>
+    </li>
+</div>
 </body>
 
 </html>
